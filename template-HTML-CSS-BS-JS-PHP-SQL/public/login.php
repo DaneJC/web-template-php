@@ -74,23 +74,23 @@ html, body {
    <!-- content -->
    <div class="content my-auto">
       <!--# login card #-->
-      <form class="form-signin">
+      <form class="form-signin" method="post" action="../resources/inc/login.php">
          <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
          <label for="inputEmail" class="sr-only">Email address</label>
-         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+         <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
          <label for="inputPassword" class="sr-only">Password</label>
-         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+         <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" >
          <div class="checkbox mb-3">
             <label>
                <input type="checkbox" value="remember-me"> Remember me
             </label>
          </div>
          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-         <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+         <div id="footer" class="my-auto mt-5"><p><small> 2020 &copy; Dane Campbell | Web-Solutions </small></p></div>
       </form>
    </div>
-   <div id="footer" class="my-auto"><p><small> 2020 &copy; Dane Campbell | Web-Solutions </small></p></div>
+
 
 </body>
 </html>
